@@ -1,0 +1,36 @@
+.containerVideo {
+  position: relative;
+}
+.video {
+  object-fit: cover;
+}
+.playPauseBtnContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.isHoverBtn {
+  animation: fadeOut 1s ease-in-out 0.2s forwards;
+  width: 3000px;
+}
+.playPauseBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+  user-select: none;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

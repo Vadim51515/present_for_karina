@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  height: max-content;
+  grid-template-areas:
+    "f s"
+    "f t";
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  background-color: #fff;
+  padding: 4px 4px 0 4px;
+}
+
+.firstItem {
+  grid-area: f;
+}
+
+.secondItem {
+  grid-area: s;
+}
+.threeItem {
+  grid-area: t;
+}
