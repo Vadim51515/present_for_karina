@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  height: max-content;
+  grid-template-areas:
+    "f f f s s s"
+    "t t fourth fourth five five";
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.firstItem {
+  grid-area: f;
+}
+
+.secondItem {
+  grid-area: s;
+}
+.threeItem {
+  grid-area: t;
+}
+
+.fourthItem {
+  grid-area: fourth;
+}
+.fiveItem {
+  grid-area: five;
+}
