@@ -1,15 +1,41 @@
 .App {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   padding: 16px;
-  background-color: rgb(30 30 30);
   padding-bottom: 100px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+body {
+  background-color: rgb(30 30 30);
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.containerImgWithMB,
+.containerImg {
+  border: 4px solid white;
+  border-radius: 4px;
+}
+
+.containerImgWithMB {
+  margin-bottom: 40px;
 }
 
 .block_2 {
   margin-left: auto;
   min-width: 618px;
+}
+
+.block_3 {
+  margin-left: auto;
+  min-width: 668px;
 }
 
 .border1 {
@@ -19,6 +45,49 @@
   -webkit-animation: Gradient 5s ease infinite;
   -moz-animation: Gradient 5s ease infinite;
   animation: Gradient 5s ease infinite;
+  padding: 4px;
+  border-radius: 4px;
+}
+.border2 {
+  box-shadow: none !important;
+  background: linear-gradient(-45deg, #23a6d5, #f5fcfa);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 3s ease infinite;
+  -moz-animation: Gradient 3s ease infinite;
+  animation: Gradient 3s ease infinite;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.border3 {
+  box-shadow: none !important;
+  background: linear-gradient(-45deg, #f077ea, #f5fcfa);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 3s ease infinite;
+  -moz-animation: Gradient 3s ease infinite;
+  animation: Gradient 3s ease infinite;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.border4 {
+  box-shadow: none !important;
+  background: linear-gradient(-45deg, #b82348, #f5fcfa);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 3s ease infinite;
+  -moz-animation: Gradient 3s ease infinite;
+  animation: Gradient 3s ease infinite;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.border5 {
+  box-shadow: none !important;
+  background: linear-gradient(-45deg, #e2b157, #f5fcfa);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 3s ease infinite;
+  -moz-animation: Gradient 3s ease infinite;
+  animation: Gradient 3s ease infinite;
   padding: 4px;
   border-radius: 4px;
 }

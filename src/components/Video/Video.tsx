@@ -3,8 +3,16 @@ import styles from "./Video.module.scss";
 import play from "../../assets/images/play.png";
 import pause from "../../assets/images/pause.png";
 import classNames from "classnames";
+import FullScreenBtn from "../../assets/images/FullScreenBtn.svg";
 
-export const Video = ({ src, styleForVideo, previewImg }: any) => {
+export const Video = ({
+  src,
+  styleForVideo,
+  previewImg,
+  classForContainer,
+  setContentOnFullScreen,
+  isFullScreenBtn = true,
+}: any) => {
   const [isPlayVideo, setIsPlayVideo] = useState(false);
 
   const testRef = useRef(null);
@@ -12,7 +20,7 @@ export const Video = ({ src, styleForVideo, previewImg }: any) => {
   const PlayPauseButton = () => {
     return (
       <div
-        onClick={() =>
+        onClick={(e: any) => {
           setIsPlayVideo((isPlayVideo) => {
             console.log("tew");
             if (isPlayVideo) {
@@ -23,8 +31,10 @@ export const Video = ({ src, styleForVideo, previewImg }: any) => {
               testRef.current.play();
             }
             return !isPlayVideo;
-          })
-        }
+          });
+          //@ts-ignore
+          e.preventDefault();
+        }}
         className={styles.playPauseBtnContainer}
       >
         <img
@@ -40,7 +50,7 @@ export const Video = ({ src, styleForVideo, previewImg }: any) => {
   };
 
   return (
-    <div className={styles.containerVideo}>
+    <div className={classNames(styles.containerVideo, classForContainer)}>
       <video
         onEnded={() => setIsPlayVideo(false)}
         ref={testRef}
@@ -51,6 +61,20 @@ export const Video = ({ src, styleForVideo, previewImg }: any) => {
         poster={previewImg}
       />
       <PlayPauseButton />
+
+      {isFullScreenBtn && (
+        <img
+          onClick={() => {
+            //@ts-ignore
+            testRef.current.pause();
+            setIsPlayVideo(false);
+            setContentOnFullScreen(src);
+          }}
+          className={styles.fullScreenBtn}
+          src={FullScreenBtn}
+          alt=""
+        />
+      )}
     </div>
   );
 };
