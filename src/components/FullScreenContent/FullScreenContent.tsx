@@ -23,6 +23,7 @@ export const FullScreenContent = ({ content, onClose }: any) => {
         <CardImg classForImg={styles.containerImg} imgFirst={content} />
       ) : (
         <Video
+          isControls
           isFullScreenBtn={false}
           src={content}
           styleForVideo={{

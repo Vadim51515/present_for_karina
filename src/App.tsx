@@ -116,6 +116,45 @@ import karina_134 from "./assets/images/karina_134.jpg";
 import karina_137 from "./assets/images/karina_137.jpg";
 import karina_138 from "./assets/images/karina_138.jpg";
 import karina_140 from "./assets/images/karina_140.jpg";
+import karina_141 from "./assets/images/karina_141.jpg";
+import karina_142 from "./assets/images/karina_142.jpg";
+import karina_143 from "./assets/images/karina_143.jpg";
+import karina_145 from "./assets/images/karina_145.jpg";
+import karina_147 from "./assets/images/karina_147.jpg";
+import karina_148 from "./assets/images/karina_148.jpg";
+import karina_149 from "./assets/images/karina_149.jpg";
+import karina_150 from "./assets/images/karina_150.jpg";
+import karina_151 from "./assets/images/karina_151.jpg";
+import karina_152 from "./assets/images/karina_152.jpg";
+import karina_153 from "./assets/images/karina_153.jpg";
+import karina_155 from "./assets/images/karina_155.jpg";
+import karina_166 from "./assets/images/karina_166.jpg";
+import karina_164 from "./assets/images/karina_164.jpg";
+import karina_168 from "./assets/images/karina_168.jpg";
+import karina_169 from "./assets/images/karina_169.jpg";
+import karina_170 from "./assets/images/karina_170.jpg";
+import karina_171 from "./assets/images/karina_171.jpg";
+import karina_172 from "./assets/images/karina_172.jpg";
+import karina_173 from "./assets/images/karina_173.jpg";
+import karina_174 from "./assets/images/karina_174.jpg";
+import karina_176 from "./assets/images/karina_176.jpg";
+import karina_177 from "./assets/images/karina_177.jpg";
+import karina_183 from "./assets/images/karina_183.jpg";
+import karina_184 from "./assets/images/karina_184.jpg";
+import karina_185 from "./assets/images/karina_185.jpg";
+import karina_186 from "./assets/images/karina_186.jpg";
+import karina_187 from "./assets/images/karina_187.jpg";
+import karina_188 from "./assets/images/karina_188.jpg";
+import karina_192 from "./assets/images/karina_192.jpg";
+import karina_193 from "./assets/images/karina_193.jpg";
+import karina_194 from "./assets/images/karina_194.jpg";
+import karina_199 from "./assets/images/karina_199.jpg";
+import karina_200 from "./assets/images/karina_200.jpg";
+import karina_201 from "./assets/images/karina_201.jpg";
+import karina_202 from "./assets/images/karina_202.jpg";
+import karina_206 from "./assets/images/karina_206.jpg";
+import karina_207 from "./assets/images/karina_207.jpg";
+import karina_208 from "./assets/images/karina_208.jpg";
 
 import karina6 from "./assets/images/karina_6.mp4";
 import karina_7 from "./assets/images/karina_7.mp4";
@@ -136,6 +175,33 @@ import karina_131 from "./assets/images/karina_131.mp4";
 import karina_135 from "./assets/images/karina_135.mp4";
 import karina_136 from "./assets/images/karina_136.mp4";
 import karina_139 from "./assets/images/karina_139.MOV";
+import karina_144 from "./assets/images/karina_144.mp4";
+import karina_146 from "./assets/images/karina_146.mp4";
+import karina_154 from "./assets/images/karina_154.mp4";
+import karina_156 from "./assets/images/karina_156.mp4";
+import karina_157 from "./assets/images/karina_157.mp4";
+import karina_158 from "./assets/images/karina_158.mp4";
+import karina_159 from "./assets/images/karina_159.mp4";
+import karina_160 from "./assets/images/karina_160.mp4";
+import karina_161 from "./assets/images/karina_161.mp4";
+import karina_163 from "./assets/images/karina_163.mp4";
+import karina_165 from "./assets/images/karina_165.mp4";
+import karina_167 from "./assets/images/karina_167.mp4";
+import karina_178 from "./assets/images/karina_178.mp4";
+import karina_179 from "./assets/images/karina_179.mp4";
+import karina_180 from "./assets/images/karina_180.mp4";
+import karina_181 from "./assets/images/karina_181.mp4";
+import karina_182 from "./assets/images/karina_182.mp4";
+import karina_189 from "./assets/images/karina_189.mp4";
+import karina_190 from "./assets/images/karina_190.mp4";
+import karina_191 from "./assets/images/karina_191.mp4";
+import karina_195 from "./assets/images/karina_195.mp4";
+import karina_196 from "./assets/images/karina_196.mp4";
+import karina_197 from "./assets/images/karina_197.mp4";
+import karina_198 from "./assets/images/karina_198.mp4";
+import karina_203 from "./assets/images/karina_203.mp4";
+import karina_204 from "./assets/images/karina_204.mp4";
+import karina_205 from "./assets/images/karina_205.mp4";
 
 import styles from "./App.module.scss";
 import { GalleryForThree } from "./layouts/GalleryForThree/GalleryForThree";
@@ -910,7 +976,7 @@ function App() {
           />
         </GalleryForFive>
       </div> */}
-      <div style={{ display: "flex", marginBottom: 120 }}>
+      {/* <div style={{ display: "flex", marginBottom: 120 }}>
         <GalleryForSix classContainer={styles.border5}>
           <CardImg
             imgFirst={karina_119}
@@ -952,13 +1018,21 @@ function App() {
         </div>
       </div>
 
-      <h2>{`Не всё же время нам быть в 2, неправда ли?) Мы тогда подумали так, и пошли гулять полной компашкой из 5 человек. Конечно не всё было идеально, лично меня немного задела излишняя забота и защита Кати, но в любом случае, это был интересный, и я думаю важный опыт для наших взаимоотношений, и для понимания каких либо будущих ситуаций`}</h2>
-      <h2>{``}</h2>
+      <h2
+        style={{ maxWidth: " 1355px", marginLeft: "auto", marginRight: "auto" }}
+      >{`Не всё же время нам быть в 2, неправда ли?) Мы тогда подумали так, и пошли гулять полной компашкой из 5 человек. Конечно не всё было идеально, лично меня немного задела излишняя забота и защита Кати, но в любом случае, это был интересный, и я думаю важный опыт для наших взаимоотношений, и для понимания каких либо будущих ситуаций`}</h2>
+      <h2
+        style={{ maxWidth: " 1355px", marginLeft: "auto", marginRight: "auto" }}
+      >{` Не считая негатива, было огромное количество классных моментов. Фоточки возле граффити, прогулка в парке, поздний ужин в KFC и конечно душевные разговоры у Дена, и в особенности твоя игра на гитаре. Очень жаль что гитара была расстроена, хотелось бы услышать как ты умеешь играть что-нибудь вживую в нормальных условиях и на нормальных инструментах`}</h2>
       <div
         style={{
           display: "flex",
           justifyContent: "space-between",
           marginBottom: 40,
+          maxWidth: " 1355px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          width: "100%",
         }}
       >
         <div>
@@ -1005,7 +1079,22 @@ function App() {
           />
         </div>
       </div>
-
+      <h2
+        style={{
+          maxWidth: " 1355px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 40,
+        }}
+      >{`Суббота и воскресенье были совершенно обычные, нет же ничего странного в сравнении вкуса двух бутербродов при помощи духовной силы, наблюдением за хвостом Шилы, когда она вела себя как индус, который управляет змеёй, а так же мы успели открыть свою испровизацию. Посмотреть можно на канале СТС, каждую субботу в 17:00😂`}</h2>
+      <h2
+        style={{
+          maxWidth: " 1355px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 40,
+        }}
+      >{`Кстати, твои способоноти читать по губам меня очень удивили. Как можешь помнить, у меня всё очень плохо со чтением по губам, возможно поэтому, я в особенности был шоке с того, как круто у тебя это получалось делать`}</h2>
       <div
         style={{
           width: "100%",
@@ -1049,9 +1138,446 @@ function App() {
           previewImg={karina_140}
           setContentOnFullScreen={setContentOnFullScreen}
         />
+      </div> */}
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          marginBottom: 140,
+        }}
+      >
+        <div style={{ marginRight: 40 }}>
+          <CardImg
+            classForContainer={styles.containerImgWithMB}
+            imgFirst={karina_141}
+            styleForImg={{ width: 350, height: 350 }}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <CardImg
+            classForContainer={styles.containerImg}
+            imgFirst={karina_142}
+            styleForImg={{ width: 350, height: 350 }}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+        </div>
+        <div>
+          <CardImg
+            classForContainer={styles.containerImgWithMB}
+            imgFirst={karina_143}
+            styleForImg={{ width: 350, height: 350 }}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <Video
+            classForContainer={styles.containerImgWithMB}
+            src={karina_144}
+            styleForVideo={{ width: 350, height: 350 }}
+            previewImg={karina_145}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+        </div>
+        <div style={{ marginLeft: 40 }}>
+          <h2>{`26 апреля - первый месяц наших отношений. Помню твой необычный и необычайный образ, был очень удивлен, и явно не ожидал увидеть тебе в таком виде😅. Ужин был невероятно вкусный, курочка, да еще и салатик, ммм, это наверное самая лучшая еда которая  вообще существует, особенно в твоём исполнении. Мой же подарок заключался в парных кулонах, которые при совмещении создавали сердце, одно сердце на двоих, сердце нашей общей любви❤️`}</h2>
+          <h2>{`Сейчас можно увидеть наглядно, какое количество событий произошло буквально за месяц, хотя даже здесь, я явно рассказал не о всём, а брал лишь самые самые основные моменты. Хотелось бы сказать огромное спасибо тебе за это время, это было невероятно круто и очень мило. Спасибо нам, за все все моменты, которые мы сделали сами для нас`}</h2>
+        </div>
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          marginLeft: "auto",
+          marginBottom: 140,
+        }}
+      >
+        <div style={{ marginRight: 40 }}>
+          <h2>{`Просто представь, насколько вкусно нужно готовить шавухи, чтобы приходилось готовить их не только для себя и парня, но и для его друзей😂👌`}</h2>
+          <h2>{`В эти выходные мы собрались у меня дома, вкусно покушали твою невероятно вкусную и большую шаурму, а так же хорошо провели время общаясь и играя в импровизацию`}</h2>
+        </div>
+        <Video
+          classForContainer={styles.containerImgWithMB}
+          src={karina_146}
+          styleForVideo={{ width: 350, height: 550 }}
+          previewImg={karina_147}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 40,
+        }}
+      >
+        <CardImg
+          classForContainer={styles.containerImg}
+          imgFirst={karina_148}
+          styleForImg={{ width: 350, height: 450 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <CardImg
+          classForContainer={styles.containerImg}
+          imgFirst={karina_149}
+          styleForImg={{ width: 350, height: 450 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <CardImg
+          classForContainer={styles.containerImg}
+          imgFirst={karina_150}
+          styleForImg={{ width: 350, height: 450 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 40,
+        }}
+      >
+        <CardImg
+          classForContainer={styles.containerImg}
+          imgFirst={karina_151}
+          styleForImg={{ width: 350, height: 450 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <CardImg
+          classForContainer={styles.containerImg}
+          imgFirst={karina_152}
+          styleForImg={{ width: 350, height: 450 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_154}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_155}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 140,
+        }}
+      >
+        <CardImg
+          classForContainer={styles.containerImg}
+          imgFirst={karina_153}
+          styleForImg={{ width: 350, height: 450 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 40,
+        }}
+      >
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_156}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_177}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_157}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_176}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_158}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_174}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 40,
+        }}
+      >
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_159}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_173}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_160}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_172}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_161}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_171}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 40,
+        }}
+      >
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_163}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_170}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_167}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_168}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <CardImg
+          classForContainer={styles.containerImg}
+          imgFirst={karina_164}
+          styleForImg={{ width: 350, height: 450 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 140,
+        }}
+      >
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_165}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_169}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <CardImg
+          classForContainer={styles.containerImg}
+          imgFirst={karina_166}
+          styleForImg={{ width: 350, height: 450 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          marginBottom: 140,
+          alignItems: "center",
+        }}
+      >
+        <GalleryForFive classContainer={classNames(styles.block_4)}>
+          <Video
+            src={karina_178}
+            styleForVideo={{ width: 350, height: 600 }}
+            previewImg={karina_184}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <Video
+            src={karina_179}
+            styleForVideo={{ width: 350, height: 600 }}
+            previewImg={karina_185}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <Video
+            src={karina_180}
+            styleForVideo={{ width: 233, height: 370 }}
+            previewImg={karina_186}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <Video
+            src={karina_181}
+            styleForVideo={{ width: 233, height: 370 }}
+            previewImg={karina_187}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <Video
+            src={karina_182}
+            styleForVideo={{ width: 233, height: 370 }}
+            previewImg={karina_188}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+        </GalleryForFive>
+        <CardImg
+          imgFirst={karina_183}
+          styleForImg={{ width: 350, height: 800 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+          classForContainer={classNames(styles.containerImg, styles.ml_a)}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          marginBottom: 140,
+          marginLeft: "auto",
+        }}
+      >
+        <div style={{ display: "flex", marginBottom: 140, marginLeft: "auto" }}>
+          <div style={{ marginRight: 30 }}>
+            <h2>{`ыпываывавыыпываывавыы пываывавыыпываывавыыпываывавы ыпываывавыыпы ваывавы ыва ыв аыв выа ыав аы выава ыв аыаваы аыа выаыа ыв`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+          </div>
+          <GalleryForThree>
+            <Video
+              src={karina_189}
+              styleForVideo={{ width: 300, height: 500 }}
+              previewImg={karina_192}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+            <Video
+              src={karina_190}
+              styleForVideo={{ width: 250, height: 248 }}
+              previewImg={karina_193}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+            <Video
+              src={karina_191}
+              styleForVideo={{ width: 250, height: 248 }}
+              previewImg={karina_194}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+          </GalleryForThree>
+        </div>
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          marginBottom: 140,
+          marginLeft: "auto",
+        }}
+      >
+        <div
+          style={{ display: "flex", marginBottom: 140, marginRight: "auto" }}
+        >
+          <GalleryForFourth>
+            <Video
+              src={karina_195}
+              styleForVideo={{ width: 350, height: 570 }}
+              previewImg={karina_199}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+            <Video
+              src={karina_196}
+              styleForVideo={{ width: 350, height: 570 }}
+              previewImg={karina_200}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+            <Video
+              src={karina_197}
+              styleForVideo={{ width: 350, height: 570 }}
+              previewImg={karina_201}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+            <Video
+              src={karina_198}
+              styleForVideo={{ width: 350, height: 570 }}
+              previewImg={karina_202}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+          </GalleryForFourth>
+          <div style={{ marginLeft: 30 }}>
+            <h2>{`ыпываывавыыпываывавыы пываывавыыпываывавыыпываывавы ыпываывавыыпы ваывавы ыва ыв аыв выа ыав аы выава ыв аыаваы аыа выаыа ыв`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          marginBottom: 140,
+          marginLeft: "auto",
+        }}
+      >
+        <div style={{ display: "flex", marginBottom: 140, marginLeft: "auto" }}>
+          <div style={{ marginRight: 30 }}>
+            <h2>{`ыпываывавыыпываывавыы пываывавыыпываывавыыпываывавы ыпываывавыыпы ваывавы ыва ыв аыв выа ыав аы выава ыв аыаваы аыа выаыа ыв`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+          </div>
+          <GalleryForThree>
+            <Video
+              src={karina_203}
+              styleForVideo={{ width: 300, height: 500 }}
+              previewImg={karina_206}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+            <Video
+              src={karina_204}
+              styleForVideo={{ width: 250, height: 248 }}
+              previewImg={karina_207}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+            <Video
+              src={karina_205}
+              styleForVideo={{ width: 250, height: 248 }}
+              previewImg={karina_208}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+          </GalleryForThree>
+        </div>
       </div>
     </div>
   );
 }
 
 export default App;
+// max-width: 1355px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 100%;

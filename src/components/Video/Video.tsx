@@ -12,6 +12,7 @@ export const Video = ({
   classForContainer,
   setContentOnFullScreen,
   isFullScreenBtn = true,
+  isControls = false,
 }: any) => {
   const [isPlayVideo, setIsPlayVideo] = useState(false);
 
@@ -57,10 +58,10 @@ export const Video = ({
         className={styles.video}
         style={styleForVideo}
         src={src}
-        //   controls
-        poster={previewImg}
+        controls={isControls}
+        // poster={previewImg}
       />
-      <PlayPauseButton />
+      {!isControls && <PlayPauseButton />}
 
       {isFullScreenBtn && (
         <img
