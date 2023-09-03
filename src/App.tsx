@@ -155,6 +155,46 @@ import karina_202 from "./assets/images/karina_202.jpg";
 import karina_206 from "./assets/images/karina_206.jpg";
 import karina_207 from "./assets/images/karina_207.jpg";
 import karina_208 from "./assets/images/karina_208.jpg";
+import karina_212 from "./assets/images/karina_212.jpg";
+import karina_215 from "./assets/images/karina_215.jpg";
+import karina_219 from "./assets/images/karina_219.jpg";
+import karina_220 from "./assets/images/karina_220.jpg";
+import karina_221 from "./assets/images/karina_221.jpg";
+import karina_222 from "./assets/images/karina_222.jpg";
+import karina_223 from "./assets/images/karina_223.jpg";
+import karina_224 from "./assets/images/karina_224.jpg";
+import karina_225 from "./assets/images/karina_225.jpg";
+import karina_226 from "./assets/images/karina_226.jpg";
+import karina_227 from "./assets/images/karina_227.jpg";
+import karina_235 from "./assets/images/karina_235.jpg";
+import karina_236 from "./assets/images/karina_236.jpg";
+import karina_237 from "./assets/images/karina_237.jpg";
+import karina_238 from "./assets/images/karina_238.jpg";
+import karina_239 from "./assets/images/karina_239.jpg";
+import karina_240 from "./assets/images/karina_240.jpg";
+import karina_243 from "./assets/images/karina_243.jpg";
+import karina_246 from "./assets/images/karina_246.jpg";
+import karina_247 from "./assets/images/karina_247.jpg";
+import karina_248 from "./assets/images/karina_248.jpg";
+import karina_249 from "./assets/images/karina_249.jpg";
+import karina_254 from "./assets/images/karina_254.jpg";
+import karina_255 from "./assets/images/karina_255.jpg";
+import karina_256 from "./assets/images/karina_256.jpg";
+import karina_257 from "./assets/images/karina_257.jpg";
+import karina_258 from "./assets/images/karina_258.jpg";
+import karina_265 from "./assets/images/karina_265.jpg";
+import karina_266 from "./assets/images/karina_266.jpg";
+import karina_267 from "./assets/images/karina_267.jpg";
+import karina_268 from "./assets/images/karina_268.jpg";
+import karina_269 from "./assets/images/karina_269.jpg";
+import karina_270 from "./assets/images/karina_270.jpg";
+import karina_272 from "./assets/images/karina_272.jpg";
+import karina_274 from "./assets/images/karina_274.jpg";
+import karina_277 from "./assets/images/karina_277.jpg";
+import karina_278 from "./assets/images/karina_278.jpg";
+import karina_279 from "./assets/images/karina_279.jpg";
+import karina_280 from "./assets/images/karina_280.jpg";
+import karina_281 from "./assets/images/karina_281.jpg";
 
 import karina6 from "./assets/images/karina_6.mp4";
 import karina_7 from "./assets/images/karina_7.mp4";
@@ -202,6 +242,38 @@ import karina_198 from "./assets/images/karina_198.mp4";
 import karina_203 from "./assets/images/karina_203.mp4";
 import karina_204 from "./assets/images/karina_204.mp4";
 import karina_205 from "./assets/images/karina_205.mp4";
+import karina_209 from "./assets/images/karina_209.mp4";
+import karina_210 from "./assets/images/karina_210.mp4";
+import karina_211 from "./assets/images/karina_211.mp4";
+import karina_213 from "./assets/images/karina_213.mp4";
+import karina_214 from "./assets/images/karina_214.mp4";
+import karina_216 from "./assets/images/karina_216.mp4";
+import karina_217 from "./assets/images/karina_217.mp4";
+import karina_218 from "./assets/images/karina_218.mp4";
+import karina_229 from "./assets/images/karina_229.mp4";
+import karina_230 from "./assets/images/karina_230.mp4";
+import karina_231 from "./assets/images/karina_231.mp4";
+import karina_232 from "./assets/images/karina_232.mp4";
+import karina_233 from "./assets/images/karina_233.mp4";
+import karina_234 from "./assets/images/karina_234.mp4";
+import karina_241 from "./assets/images/karina_241.mp4";
+import karina_242 from "./assets/images/karina_242.mp4";
+import karina_244 from "./assets/images/karina_244.mp4";
+import karina_245 from "./assets/images/karina_245.mp4";
+import karina_250 from "./assets/images/karina_250.mp4";
+import karina_251 from "./assets/images/karina_251.mp4";
+import karina_252 from "./assets/images/karina_252.mp4";
+import karina_253 from "./assets/images/karina_253.mp4";
+import karina_259 from "./assets/images/karina_259.mp4";
+import karina_260 from "./assets/images/karina_260.mp4";
+import karina_261 from "./assets/images/karina_261.mp4";
+import karina_262 from "./assets/images/karina_262.mp4";
+import karina_263 from "./assets/images/karina_263.mp4";
+import karina_264 from "./assets/images/karina_264.mp4";
+import karina_271 from "./assets/images/karina_271.mp4";
+import karina_273 from "./assets/images/karina_273.mp4";
+import karina_275 from "./assets/images/karina_275.mp4";
+import karina_276 from "./assets/images/karina_276.mp4";
 
 import styles from "./App.module.scss";
 import { GalleryForThree } from "./layouts/GalleryForThree/GalleryForThree";
@@ -1571,6 +1643,119 @@ function App() {
             />
           </GalleryForThree>
         </div>
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 40,
+        }}
+      >
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_209}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_219}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_210}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_220}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_211}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_221}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginBottom: 40,
+        }}
+      >
+        <CardImg
+          classForContainer={styles.containerImg}
+          imgFirst={karina_212}
+          styleForImg={{ width: 350, height: 450 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_213}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_222}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_214}
+          styleForVideo={{ width: 350, height: 450 }}
+          previewImg={karina_223}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 40,
+        }}
+      >
+        <CardImg
+          classForContainer={styles.containerImg}
+          imgFirst={karina_215}
+          styleForImg={{ width: 400, height: 550 }}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_216}
+          styleForVideo={{ width: 400, height: 550 }}
+          previewImg={karina_224}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 40,
+        }}
+      >
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_217}
+          styleForVideo={{ width: 400, height: 550 }}
+          previewImg={karina_225}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
+
+        <Video
+          classForContainer={styles.containerImg}
+          src={karina_218}
+          styleForVideo={{ width: 400, height: 550 }}
+          previewImg={karina_226}
+          setContentOnFullScreen={setContentOnFullScreen}
+        />
       </div>
     </div>
   );

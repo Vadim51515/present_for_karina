@@ -59,7 +59,7 @@ export const Video = ({
         style={styleForVideo}
         src={src}
         controls={isControls}
-        // poster={previewImg}
+        poster={previewImg}
       />
       {!isControls && <PlayPauseButton />}
 
