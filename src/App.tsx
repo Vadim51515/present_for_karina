@@ -166,6 +166,7 @@ import karina_224 from "./assets/images/karina_224.jpg";
 import karina_225 from "./assets/images/karina_225.jpg";
 import karina_226 from "./assets/images/karina_226.jpg";
 import karina_227 from "./assets/images/karina_227.jpg";
+import karina_228 from "./assets/images/karina_228.jpg";
 import karina_235 from "./assets/images/karina_235.jpg";
 import karina_236 from "./assets/images/karina_236.jpg";
 import karina_237 from "./assets/images/karina_237.jpg";
@@ -284,10 +285,38 @@ import { GalleryForFourth } from "./layouts/GalleryForFourth/GalleryForFourth";
 import { GalleryForSix } from "./layouts/GalleryForSix/GalleryForSix";
 import { useState } from "react";
 import { FullScreenContent } from "./components/FullScreenContent/FullScreenContent";
+import Input from "./ui/Input/Input";
 
 function App() {
   const isMobile = /Mobi|Android/i.test(window.navigator.userAgent);
   const [contentOnFullScreen, setContentOnFullScreen] = useState(undefined);
+
+  const [isLogin, setIsLogin] = useState<null | string>(
+    localStorage.getItem("isAuth")
+  );
+  const [password, setPassword] = useState("");
+  if (!isLogin) {
+    const checkPassword = () => {
+      if (password.toLowerCase() === "бяка") {
+        localStorage.setItem("isAuth", "true");
+        setIsLogin("true");
+      }
+    };
+    return (
+      <div className={styles.notAuthContainer}>
+        <div className={styles.notAuthBlock}>
+          <div>
+            <p style={{ marginBottom: 10 }}>Введите пароль пожалуйста</p>
+            <Input
+              value={password}
+              onChange={setPassword}
+              onEnter={checkPassword}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
   console.log("isMobile", isMobile);
 
   return (
@@ -1738,7 +1767,7 @@ function App() {
           justifyContent: "space-around",
           marginLeft: "auto",
           marginRight: "auto",
-          marginBottom: 40,
+          marginBottom: 140,
         }}
       >
         <Video
@@ -1756,6 +1785,106 @@ function App() {
           previewImg={karina_226}
           setContentOnFullScreen={setContentOnFullScreen}
         />
+      </div>
+
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+          marginBottom: 140,
+        }}
+      >
+        <GalleryForFourth>
+          <Video
+            src={karina_229}
+            styleForVideo={{ width: 280, height: 500 }}
+            previewImg={karina_235}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+
+          <CardImg
+            imgFirst={karina_227}
+            styleForImg={{ width: 280, height: 500 }}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <CardImg
+            imgFirst={karina_228}
+            styleForImg={{ width: 280, height: 500 }}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <Video
+            src={karina_234}
+            styleForVideo={{ width: 280, height: 500 }}
+            previewImg={karina_240}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+        </GalleryForFourth>
+        <GalleryForFourth>
+          <Video
+            src={karina_230}
+            styleForVideo={{ width: 280, height: 500 }}
+            previewImg={karina_236}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <Video
+            src={karina_231}
+            styleForVideo={{ width: 280, height: 500 }}
+            previewImg={karina_237}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <Video
+            src={karina_232}
+            styleForVideo={{ width: 280, height: 500 }}
+            previewImg={karina_238}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+          <Video
+            src={karina_233}
+            styleForVideo={{ width: 280, height: 500 }}
+            previewImg={karina_239}
+            setContentOnFullScreen={setContentOnFullScreen}
+          />
+        </GalleryForFourth>
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          marginBottom: 140,
+          marginLeft: "auto",
+        }}
+      >
+        <div
+          style={{ display: "flex", marginBottom: 140, marginRight: "auto" }}
+        >
+          <GalleryForThree>
+            <Video
+              src={karina_244}
+              styleForVideo={{ width: 350, height: 600 }}
+              previewImg={karina_248}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+            <Video
+              src={karina_245}
+              styleForVideo={{ width: 300, height: 298 }}
+              previewImg={karina_249}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+            <Video
+              src={karina_250}
+              styleForVideo={{ width: 300, height: 298 }}
+              previewImg={karina_255}
+              setContentOnFullScreen={setContentOnFullScreen}
+            />
+          </GalleryForThree>
+          <div style={{ marginLeft: 30 }}>
+            <h2>{`ыпываывавыыпываывавыы пываывавыыпываывавыыпываывавы ыпываывавыыпы ваывавы ыва ыв аыв выа ыав аы выава ыв аыаваы аыа выаыа ыв`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+            <h2>{`ыпываывавы`}</h2>
+          </div>
+        </div>
       </div>
     </div>
   );

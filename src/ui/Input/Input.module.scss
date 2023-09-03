@@ -1,0 +1,28 @@
+.container {
+  width: 200px;
+}
+
+.inputContainer {
+  min-height: 36px;
+
+  display: flex;
+  position: relative;
+
+  padding: var(--little_padding);
+
+  background-color: var(--color_background);
+  border: 1px solid rgb(145, 145, 145);
+  border-radius: 4px;
+
+  font-size: 16px;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  background-color: var(--color_background);
+  color: white;
+  &:focus {
+    outline: none;
+  }
+}
