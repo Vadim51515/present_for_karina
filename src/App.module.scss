@@ -161,10 +161,11 @@ body {
 .credits {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
-  width: 100vw;
-  animation: moveUp 6s linear; /* Настройка анимации */
-  background-color: #23a6d5;
+  width: 80vw;
+  animation: moveUp 40s linear; /* Настройка анимации */
+  // background-color: #23a6d5;
   transform: translateY(-50%);
 }
 
@@ -173,6 +174,7 @@ body {
   display: flex;
   width: 100%;
   height: 100vh;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.881);
   left: 0;
   top: 0;
@@ -181,10 +183,13 @@ body {
 
 .creditsItem {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.creditsTitle {
-  margin-right: 500px;
+.creditsBtn {
+  animation: invisibleBtn 43s linear; /* Настройка анимации */
+  opacity: 1;
 }
 
 @keyframes moveUp {
@@ -193,5 +198,17 @@ body {
   }
   100% {
     transform: translateY(-50%); /* Конечное положение вверху */
+  }
+}
+
+@keyframes invisibleBtn {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1; /* Конечное положение вверху */
   }
 }
