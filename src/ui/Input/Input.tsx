@@ -14,6 +14,7 @@ const Input: React.FC<PropsType> = ({ onChange, value, ...props }) => {
           onChange={(e) => onChange(e.target.value)}
           className={styles.input}
           value={value}
+          placeholder="Введите в меня пароль, пожалуйста"
           onKeyDown={(event) => {
             if (event.key === "Enter") {
               //@ts-ignore

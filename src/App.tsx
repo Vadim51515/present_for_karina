@@ -300,11 +300,18 @@ function App() {
   const [password, setPassword] = useState("");
   const [credits, setCredits] = useState(false);
   const [isVisibleFinalBlock, setIsVisibleFinalBlock] = useState(false);
+  const [isError, setIsError] = useState(false);
   if (!isLogin) {
     const checkPassword = () => {
-      if (password.toLowerCase() === "бяка") {
-        localStorage.setItem("isAuth", "true");
-        setIsLogin("true");
+      console.log(
+        'password.toLowerCase().includes("бяка")',
+        password.toLowerCase().includes("бяка")
+      );
+      if (password.toLowerCase().includes("бяка")) {
+        // localStorage.setItem("isAuth", "true");
+        // setIsLogin("true");
+      } else {
+        setIsError(true);
       }
     };
     return (
@@ -312,11 +319,27 @@ function App() {
         <div className={styles.notAuthBlock}>
           <div>
             <p style={{ marginBottom: 10 }}>Введите пароль пожалуйста</p>
-            <Input
-              value={password}
-              onChange={setPassword}
-              onEnter={checkPassword}
-            />
+            <p style={{ marginBottom: 10 }}>
+              Это слово было на твоей руке, на фото которое я поставил на звонок
+            </p>
+            <div style={{ display: "flex" }}>
+              <Input
+                value={password}
+                onChange={(text) => {
+                  setIsError(false);
+                  setPassword(text);
+                }}
+                onEnter={checkPassword}
+              />
+              <Button className={styles.authBtn} onClick={checkPassword}>
+                Войти
+              </Button>
+            </div>
+            {isError && (
+              <p style={{ color: "red" }}>
+                Пароль не верный. Пожалуйста, проверь слово
+              </p>
+            )}
           </div>
         </div>
       </div>
