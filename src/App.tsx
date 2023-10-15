@@ -290,7 +290,7 @@ import Button from "./ui/Button/Button";
 import { FinalyScreen } from "./components/FinalyScreen/FinalyScreen";
 
 function App() {
-  const isMobile = /Mobi|Android/i.test(window.navigator.userAgent);
+  const isMobile = window.innerWidth < 600;
   const [contentOnFullScreen, setContentOnFullScreen] = useState(undefined);
 
   const [isLogin, setIsLogin] = useState<null | string>(
@@ -301,6 +301,12 @@ function App() {
   const [credits, setCredits] = useState(false);
   const [isVisibleFinalBlock, setIsVisibleFinalBlock] = useState(false);
   const [isError, setIsError] = useState(false);
+  if (isMobile)
+    return (
+      <div style={{ display: "flex", textAlign: "center" }}>
+        <p style={{ width: "100%" }}>К сожалению, недоступно с телефончика😢</p>
+      </div>
+    );
   if (!isLogin) {
     const checkPassword = () => {
       console.log(
@@ -308,8 +314,8 @@ function App() {
         password.toLowerCase().includes("бяка")
       );
       if (password.toLowerCase().includes("бяка")) {
-        // localStorage.setItem("isAuth", "true");
-        // setIsLogin("true");
+        localStorage.setItem("isAuth", "true");
+        setIsLogin("true");
       } else {
         setIsError(true);
       }
@@ -348,7 +354,6 @@ function App() {
 
   if (isVisibleFinalBlock)
     return <FinalyScreen onClick={() => setIsVisibleFinalBlock(false)} />;
-  console.log("isMobile", isMobile);
 
   return (
     <div className={styles.App}>
